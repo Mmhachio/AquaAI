@@ -70,32 +70,34 @@
     <main>
      <form id="predict-form" method="post" action="{{ url_for('predict') }}">
     <p>CHECK YOUR WATER 💧</p>
+    <p style="font-size: 14px;">Water quality is assessed per liter (1L).</p>
+
     <label for="ph">pH:</label><br>
     <input type="number" id="ph" name="ph" step="any" placeholder="Desirable Range 0-14" min="0" max="14"><br>
     
     <label for="hardness">Hardness:</label><br>
-    <input type="number" id="hardness" name="hardness" step="any" placeholder="Desirable Range 47.432-323.124" min="47.432" max="323.124"><br>
+    <input type="number" id="hardness" name="hardness" step="any" placeholder="Desirable Range 47-323" min="47" max="323"><br>
     
     <label for="solids">Solids:</label><br>
     <input type="number" id="solids" name="solids" step="any" placeholder="Desirable Range 0-500" min="0" max="500"><br>
     
     <label for="chloramines">Chloramines:</label><br>
-    <input type="number" id="chloramines" name="chloramines" step="any" placeholder="Up to 13.127 mg/L" min="0" max="13.127"><br>
+    <input type="number" id="chloramines" name="chloramines" step="any" placeholder="Up to 14 mg/L" min="0" max="14"><br>
     
     <label for="sulfate">Sulfate:</label><br>
-    <input type="number" id="sulfate" name="sulfate" step="any" placeholder="Desirable Range 129-481.030642" min="129" max="481.030642"><br>
+    <input type="number" id="sulfate" name="sulfate" step="any" placeholder="Desirable Range 129-482" min="129" max="482"><br>
     
     <label for="conductivity">Conductivity:</label><br>
-    <input type="number" id="conductivity" name="conductivity" step="any" placeholder="Max limit 181.483754-753.34262" min="181.483754" max="753.34262"><br>
+    <input type="number" id="conductivity" name="conductivity" step="any" placeholder="Max limit 180-754" min="180" max="754"><br>
     
     <label for="organic_carbon">Organic Carbon:</label><br>
-    <input type="number" id="organic_carbon" name="organic_carbon" step="any" placeholder="Desirable limit 2.2-28.3 mg/L" min="2.2" max="28.3"><br>
+    <input type="number" id="organic_carbon" name="organic_carbon" step="any" placeholder="Desirable limit 2-30 mg/L" min="2" max="30"><br>
     
     <label for="trihalomethanes">Trihalomethanes:</label><br>
     <input type="number" id="trihalomethanes" name="trihalomethanes" step="any" placeholder="Desirable Range 0.738-124 ppm" min="0.738" max="124"><br>
     
     <label for="turbidity">Turbidity:</label><br>
-    <input type="number" id="turbidity" name="turbidity" step="any" placeholder="Desirable Range 1.45-6.739" min="1.45" max="6.739"><br><br>
+    <input type="number" id="turbidity" name="turbidity" step="any" placeholder="Desirable Range 0-7" min="0" max="7"><br><br>
     
     <input type="submit" value="Predict" class="button">
 </form>
